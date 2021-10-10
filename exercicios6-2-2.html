@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega roquinha</title>
+    <link rel="shortcult icon" href="https://i.ibb.co/JCzydWM/homer-simpson.jpg" type="image">
+    <style>
+        body {
+            height: 600px;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            background-color: #ffbdf9;
+        }
+
+        #cabecalho {
+            height: 100 px;
+            background-color: #ffff;
+        }
+
+        .input {
+            color: blanchedalmond;
+        }
+
+        #logo {
+            width: 180px;
+            height: 150px;
+            text-align: center;
+        }
+
+        #container {
+            margin-top: 100px;
+            height: 360px;
+            width: 500px;
+            background-color: hsl(0, 20%, 99%);
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 50px;
+            text-align: center;
+
+        }
+
+        #acessar {
+            min-height: 30px;
+            width: 80px;
+        }
+    </style>
+    <script>
+
+        function cliqueBotao() {
+            let nomeCompleto = document.getElementById("nome-completo").value;
+            if (nomeCompleto == "") {
+                alert("nome de usuário e obrigatório")
+                return;
+
+            }
+            let email = document.getElementById("email").value;
+            if (email == "") {
+                alert("email obrigatório")
+                return;
+
+            }
+            let senha = document.getElementById("senha").value;
+            if (senha == "") {
+                alert("A senha é obrigatória")
+                return;
+            }
+let confirmeSenha = document.getElementById("confirme-senha").value;
+if(confirmeSenha == "") {
+    alert("a confirmação de senha é obrigatório")
+    return;
+}
+
+        } function escreverNoCosole(textoParaSerEscrito) {
+            console.log(textoParaSerEscrito);
+        }
+
+
+    </script>
+
+<body>
+    <div id="cabecalho">
+        <img id="logo" src="https://i.ibb.co/56N4XL3/logo-donut.png" alt="Logo do site">
+    </div>
+    <div id="container">
+        <h3>Realizar Cadrastro</h3>
+        <label for="nome-completo">Nome completo</label><br>
+        <input id="nome-completo" type="text"><br><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="" id="email"><br><br>
+        <label for="senha">Senha</label><br>
+        <input type="senha"><br><br>
+        <label for="confirme-senha">Confirme senha</label><br><br>
+        <input type="password"><br><br>
+
+
+
+        <button onclick="cliqueBotao()">acessar</button><br><br>
+        <a href="exercicios6-2.html">Não tem usuário?Cadastre-se</a>
+
+</body>
+
+</html>

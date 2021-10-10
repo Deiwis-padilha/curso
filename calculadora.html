@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcult icon" hrel="https://i.ibb.co/JHysTz9/calculator-logo.png" type="image">
+    <style>
+        body {
+            height: 600px;
+            margin: 20;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            background-color: #D3D3D3;
+        }
+
+        #cabecalho {
+            height: 150px;
+            background-color: white;
+        }
+
+        #logo {
+            width: 180px;
+            height: 150px;
+            text-align: center;
+        }
+
+        #rodape {
+            height: 150px;
+            background-color: #D3D3D3;
+        }
+    </style>
+    <script>
+         function calcular(){
+             let ValorEntrada = document.getElementById("entrada").value;
+             let ValorSaida = document.getElementById("saida").value;
+             let SomarValorEntrada = ValorSaida +(entrada+saida) ; 
+document.getElementById("resultado").innerHTML = ValorSaida;
+         }
+    </script>
+</head>
+
+<body>
+
+    <div id="cabecalho">
+        <img id="logo" src="https://i.ibb.co/JHysTz9/calculator-logo.png" alt="Logo do site">
+    </div>
+    <div id=conteudo>
+
+    </div>
+    <div id="rodape"><br>
+        <input id="entrada" type="text">
+        <h1>somar</h1>
+        <input id="saida" type="text"><br><br><br>
+        <button onclick="calcular()">Calcular</button> 
+
+       
+
+</html>
+</head>
+<body>
+    
+</body>
+</html>
