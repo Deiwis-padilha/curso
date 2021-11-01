@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora aula 10</title>
+    <link rel="shortcult icon" hrel="https://i.ibb.co/JHysTz9/calculator-logo.png" type="image">
+    <style>
+        body {
+            height: 600px;
+            margin: 20;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            background-color: #D3D3D3;
+        }
+
+        #cabecalho {
+            height: 150px;
+            background-color: white;
+        }
+
+        #logo {
+            width: 180px;
+            height: 150px;
+            text-align: center;
+        }
+
+        #rodape {
+            height: 150px;
+            background-color: #D3D3D3;
+        }
+    </style>
+    <script>
+         function calcular(){
+             let ValorEntrada = document.getElementById("entrada").value;
+             let ValorSaida = document.getElementById("saida").value;
+             let SomarValorEntrada = ValorSaida +(entrada+saida) ; 
+document.getElementById("resultado").innerHTML = ValorSaida;
+         }
+           function CalcularSomar() {
+            let OperadorUm = document.getElementById("valor1").value;
+            let OperadorUmNumerico = parseInt(OperadorUm);
+
+            let OperadorDois = document.getElementById("valor2").value;
+            let OperadorDoisNumerico = parseInt(OperadorDois);
+            let soma = OperadorUmNumerico + OperadorDoisNumerico;
+            
+            MostraNoConsole(soma);
+
+            document.getElementById("resultado").innerHTML = soma
+
+        }
+        function pegarValorDoSelect(id){
+            let select = document.getElementById(id);
+        return select.options[select.selectedindex].value;
+        }
+        function MostraNoConsole(messagem) {
+            console.log(messagem);
+        }
+    </script>
+
+</head>
+
+<body>
+  
+    <div id="cabecalho">
+        <img id="logo" src="https://i.ibb.co/JHysTz9/calculator-logo.png" alt="Logo do site">
+    </div><br>
+  
+    <input id="valor1" type="text"><br><br>
+    <select id='operador'>
+        <option value="somar">Somar</option>
+    <option value="subtrair">Subtrair</option>
+    <option value="dividir">Dividir</option>
+    <option value="multiplicar">Multiplicar</option>
+    </select>
+    <br><br>
+    <input id="valor2" type="text"><br><br>
+    <button onclick="CalcularSomar()">calcular</button>
+    <p>resultado</p>
+    <p id="resultado"></p>
+<br><br>
+<button onclick="CalcularSomar()">Mostra resultado</button>
+</body>
+
+</html>
