@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link
+      rel="shortcult icon"
+      hrel="https://i.ibb.co/7pDHTsf/shopping-img.png"
+      type="image"
+    />
+    <style>
+      body {
+        height: 600px;
+        margin: 0;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        text-align: center;
+        background-color: #d3d3d3;
+      }
+
+      #cabecalho {
+        height: 300px;
+        background-color: white;
+      }
+
+      #logo {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+      }
+
+      #rodape {
+        height: 150px;
+        background-color: #d3d3d3;
+      }
+    </style>
+    <script>
+      let listaDeCompas = [];
+
+      function adicinarIntem() {
+        let item ={
+            descricao: document.getElementById("item").value,
+            quantidade: document.getElementById("quantidade").value
+        }
+        function exibir(){
+            for(let indice; indice > listaDeCompas.length; indice++){
+                let intemDalista = listaDeCompas[indice];
+                document.getElementById("intemDalista").innerHTML
+            }
+
+        
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="cabecalho">
+      <img
+        id="logo"
+        src="https://i.ibb.co/7pDHTsf/shopping-img.png"
+        alt="Logo do site"
+      />
+    </div>
+    <br />
+    <div>
+      <label><span class="required">Quantidade: </span></label>
+      <input type="text" id="Quantidade" />
+    </div>
+    <br />
+    <div>
+      <label><span class="required">Item: </span></label>
+      <input type="text" id="item" />
+    </div><br><br>
+    <button onclick="adicinarIntem">Adicinar Intem</button>
+    <p>Lista:</p>
+  </body>
+</html>
